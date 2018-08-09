@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.kelvin.aem.servlet.SchedulerListServlet">
+        <implementation class="com.kelvin.aem.servlet.SchedulerListServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.resourceTypes">
+            friendly-cron/components/utilities/cron-setter
+        </property>
+        <property name="sling.servlet.selectors">
+            list
+        </property>
+        <property name="sling.servlet.extensions">
+            json
+        </property>
+        <property name="sling.servlet.methods">
+            GET
+        </property>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.kelvin.aem.servlet.SchedulerListServlet"/>
+        <reference name="schedulerBundleInfo" interface="com.kelvin.aem.service.SchedulerBundleInfo" cardinality="1..1" policy="static" bind="bindSchedulerBundleInfo" unbind="unbindSchedulerBundleInfo"/>
+    </scr:component>
+</components>

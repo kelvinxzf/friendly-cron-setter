@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.kelvin.aem.service.impl.SchedulerBundleInfoImpl">
+    <OCD id="com.kelvin.aem.service.impl.SchedulerBundleInfoImpl" name="%com.kelvin.aem.service.impl.SchedulerBundleInfoImpl.name" description="%com.kelvin.aem.service.impl.SchedulerBundleInfoImpl.description"/>
+    <Designate pid="com.kelvin.aem.service.impl.SchedulerBundleInfoImpl">
+        <Object ocdref="com.kelvin.aem.service.impl.SchedulerBundleInfoImpl"/>
+    </Designate>
+</metatype:MetaData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Friendly Cron Expression Content Package</comment>
+<entry key="createdBy">kexu</entry>
+<entry key="name">friendly-cron.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2018-08-08T16:56:29.635-0700</entry>
+<entry key="groupId">com.kelvin.aem</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">friendly-cron-packages</entry>
+<entry key="description">Maven Multimodule project for Friendly Cron Expression.</entry>
+<entry key="artifactId">friendly-cron.ui.apps</entry>
+<entry key="path">/etc/packages/friendly-cron-packages/friendly-cron.ui.apps.zip</entry>
+</properties>

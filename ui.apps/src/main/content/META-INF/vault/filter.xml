@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/friendly-cron" />
+    	
+	<filter root="/apps/friendly-cron-configs" mode="merge"/>
+
+    <filter root="/etc/clientlibs/friendly-cron"/>
+    
+    <filter root="/etc/friendly-cron"/>
+    
+</workspaceFilter>

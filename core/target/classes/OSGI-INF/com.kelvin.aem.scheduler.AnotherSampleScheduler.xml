@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.kelvin.aem.scheduler.AnotherSampleScheduler" activate="activate" deactivate="deactivate" modified="activate">
+        <implementation class="com.kelvin.aem.scheduler.AnotherSampleScheduler"/>
+        <service servicefactory="false">
+            <provide interface="java.lang.Runnable"/>
+        </service>
+        <property name="scheduler.expression" value="0 5 0/1 * * ?"/>
+        <property name="another.property" value="test value"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.kelvin.aem.scheduler.AnotherSampleScheduler"/>
+    </scr:component>
+</components>
