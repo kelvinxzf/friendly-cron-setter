@@ -13,7 +13,7 @@ Changing ``scheduler.expression`` of an AEM/Sling scheduler usually is an admin 
 ## Dependencies
 
 * AEM 6.3 and up (6.2 and 6.1 should also work)
-* acs-aem-commons-content 3.14.10 and up (the acs-aem-commons-content subPackage is [commented out](ui.apps/pom.xml#L135), but you can uncomment to deploy it with this package)
+* acs-aem-commons-content 3.14.10 and up (the acs-aem-commons-content subPackage is [commented out](ui.apps/pom.xml#L135), but you can uncomment to deploy it along with this package if needed)
 
 ## Building
 
