@@ -1,4 +1,4 @@
-package com.kelvin.aem.servlet;
+package com.kelvin.aem.bean;
 
 public class SchedulerItem {
 

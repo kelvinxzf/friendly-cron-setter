@@ -19,7 +19,7 @@ import com.kelvin.aem.service.OsgiConfigService;
 @Component(
         immediate = true,
         metatype = true,
-        label = "Kelvin OSGi Configuration Service",
+        label = "OSGi Configuration Service",
         description = "Programatically set properties of OSGi configurations.")
 public class OsgiConfigServiceImpl implements OsgiConfigService {
 

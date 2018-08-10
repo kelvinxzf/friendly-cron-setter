@@ -17,14 +17,14 @@ import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.kelvin.aem.bean.SchedulerContent;
+import com.kelvin.aem.bean.SchedulerItem;
 import com.kelvin.aem.service.SchedulerBundleInfo;
-import com.kelvin.aem.servlet.SchedulerContent;
-import com.kelvin.aem.servlet.SchedulerItem;
 
 @Component(
         immediate = true,
         metatype = true,
-        label = "Kelvin Getting Schedulers Service",
+        label = "Getting Schedulers Service",
         description = "Find all scheduler services matching the prefix.")
 @Service(SchedulerBundleInfo.class)
 public class SchedulerBundleInfoImpl implements SchedulerBundleInfo {
