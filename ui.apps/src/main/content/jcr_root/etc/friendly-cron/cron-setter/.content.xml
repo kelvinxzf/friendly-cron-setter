@@ -5,6 +5,6 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Friendly Scheduler Cron Setter"
         sling:resourceType="friendly-cron/components/utilities/cron-setter"
-        bundlePrefix="[com.kelvin,com.boostmobile]"
-        schedulerPIDPrefix="[com.kelvin,com.boostmobile]"/>
+        bundlePrefix="[com.kelvin,com.foo]"
+        schedulerPIDPrefix="[com.kelvin,com.foo]"/>
 </jcr:root>
