@@ -37,5 +37,5 @@ Access http://localhost:4502/etc/friendly-cron/cron-setter.html after successful
 
 There are a couple of optional [resource properties](ui.apps/src/main/content/jcr_root/etc/friendly-cron/cron-setter/.content.xml)
 
-* ``bundlePrefix``:  bundle symbolic name prefixes. This tool will only list the schedulers under the bundles that with the name starting with the prefixes. Current bundle will be used if not specified.
+* ``bundlePrefix``:  bundle symbolic name prefixes. This tool will only list the schedulers under the bundles that with the names starting with the prefixes. Current bundle will be used if not specified.
 * ``schedulerPIDPrefix``: scheduler PID prefixes. This tool will only list the schedulers with the PIDs starting with the prefixes. All schedulers will be listed if not specified (subject to ``bundlePrefix`` setting).
