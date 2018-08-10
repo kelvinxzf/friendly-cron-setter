@@ -31,7 +31,7 @@ Access http://localhost:4502/etc/friendly-cron/cron-setter.html after successful
 * Run mode osgi config that comes with code package should be avoided (except the initial setting with vault filter mode="merge") otherwise whatever being set by this tool might be overridden.
 * How to set other properties of the scheduler if needed
   * Use web console if possible
-  * Extend this tool to bring up other properties to the UI for setting
+  * Extend this tool to bring other properties to the UI for setting
 
 ## Resource properties
 
