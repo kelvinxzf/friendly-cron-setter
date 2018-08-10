@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.kelvin.aem.scheduler.SampleScheduler">
-    <OCD id="com.kelvin.aem.scheduler.SampleScheduler" name="%com.kelvin.aem.scheduler.SampleScheduler.name" description="%com.kelvin.aem.scheduler.SampleScheduler.description">
-        <AD id="scheduler.expression" type="String" default="0\ 0/1\ *\ *\ *\ ?" name="%com.kelvin.aem.scheduler.SampleScheduler.scheduler.expression.name" description="%com.kelvin.aem.scheduler.SampleScheduler.scheduler.expression.description"/>
-        <AD id="another.property" type="String" default="test\ value" name="%com.kelvin.aem.scheduler.SampleScheduler.another.property.name" description="%com.kelvin.aem.scheduler.SampleScheduler.another.property.description"/>
-    </OCD>
-    <Designate pid="com.kelvin.aem.scheduler.SampleScheduler">
-        <Object ocdref="com.kelvin.aem.scheduler.SampleScheduler"/>
-    </Designate>
-</metatype:MetaData>

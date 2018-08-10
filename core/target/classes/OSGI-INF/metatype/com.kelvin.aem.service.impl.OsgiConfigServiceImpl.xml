@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.kelvin.aem.service.impl.OsgiConfigServiceImpl">
-    <OCD id="com.kelvin.aem.service.impl.OsgiConfigServiceImpl" name="%com.kelvin.aem.service.impl.OsgiConfigServiceImpl.name" description="%com.kelvin.aem.service.impl.OsgiConfigServiceImpl.description"/>
-    <Designate pid="com.kelvin.aem.service.impl.OsgiConfigServiceImpl">
-        <Object ocdref="com.kelvin.aem.service.impl.OsgiConfigServiceImpl"/>
-    </Designate>
-</metatype:MetaData>

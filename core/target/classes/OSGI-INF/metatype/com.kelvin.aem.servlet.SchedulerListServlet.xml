@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.kelvin.aem.servlet.SchedulerListServlet">
-    <OCD id="com.kelvin.aem.servlet.SchedulerListServlet" name="%com.kelvin.aem.servlet.SchedulerListServlet.name" description="%com.kelvin.aem.servlet.SchedulerListServlet.description"/>
-    <Designate pid="com.kelvin.aem.servlet.SchedulerListServlet">
-        <Object ocdref="com.kelvin.aem.servlet.SchedulerListServlet"/>
-    </Designate>
-</metatype:MetaData>
