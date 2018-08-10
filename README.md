@@ -1,30 +1,41 @@
-# Friendly Cron Expression
+# Friendly AEM Scheduler Cron Setter
 
-This a content package project generated using the AEM Multimodule Lazybones template.
+Changing ``scheduler.expression`` of an AEM/Sling scheduler usually is an admin or developer's task. For some occasions, the scheduler might be owned by content authors who want to set/change the scheduling by themselves. Even though content authors may get authorized to use crx/de or web console to set it, figuring out the correct cron expression is not easy. This utility provides a friendly UI for content authors to set the scheduling.
+
+![setter screenshot](resources/setter_screenshot.png)  
+
+## Features
+
+* jQury based quartz cron generator (by [jquery-cron](https://github.com/felixruponen/jquery-cron))
+* Resource based access that can be permissioned for certain users
+* Auto detecting or pulling existing schedulers within current or specified bundle(s)
+
+## Dependencies
+
+* AEM 6.3 and up (6.2 and 6.1 should also work)
+* acs-aem-commons-content 3.14.10 and up (the acs-aem-commons-content [subPakcage is commented out](ui.apps/pom.xml), but you can uncomment to deploy it with this package)
 
 ## Building
 
 This project uses Maven for building. Common commands:
 
-From the root directory, run ``mvn -PautoInstallPackage clean install`` to build the bundle and content package and install to a CQ instance.
+From the root directory, run ``mvn -PautoInstallPackage clean install`` to build the bundle and content package and install to a AEM instance.
 
 From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to build *just* the bundle and install to a CQ instance.
 
-## Using with AEM Developer Tools for Eclipse
+Access http://localhost:4502/etc/friendly-cron/cron-setter.html after successful build.
 
-To use this project with the AEM Developer Tools for Eclipse, import the generated Maven projects via the Import:Maven:Existing Maven Projects wizard. Then enable the Content Package facet on the _content_ project by right-clicking on the project, then select Configure, then Convert to Content Package... In the resulting dialog, select _src/main/content_ as the Content Sync Root.
+## A few things to note
 
-## Using with VLT
+* By using this friendly setter, you are delegating this tool to set the configuration, which is equivalent of setting it via web console.
+* Run mode osgi config that comes with code package should be avoided (except the initial setting with vault mode="merge") otherwise whatever being set by this tool might be overridden.
+* How to set other properties of the scheduler if needed
+  * Use web console if possible
+  * Extend this tool to bring other properties for setting
 
-To use vlt with this project, first build and install the package to your local CQ instance as described above. Then cd to `content/src/main/content/jcr_root` and run
+## Resource properties
 
-    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
+There are a couple of optional [resource properties](ui.apps/src/main/content/jcr_root/etc/friendly-cron/cron-setter/.content.xml)
 
-Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
-
-## Specifying CRX Host/Port
-
-The CRX host and port can be specified on the command line with:
-mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
-
-
+``bundlePrefix``:  bundle symbolic name prefixes. This tool will only list the schedulers under the bundles that with the name starting with the prefixes. Current bundle will be used if not specified.
+``schedulerPIDPrefix``: scheduler PID prefixes. This tool will only list the schedulers with the PIDs starting with the prefixes. All schedulers will be listed if not specified (subject to ``bundlePrefix`` setting).
