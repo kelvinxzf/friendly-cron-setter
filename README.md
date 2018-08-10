@@ -28,7 +28,7 @@ Access http://localhost:4502/etc/friendly-cron/cron-setter.html after successful
 ## A few things to note
 
 * By using this friendly setter, you are delegating this tool to set the configuration, which is equivalent of setting it via web console.
-* For the shcedulers being set by this tool, run mode osgi config that comes with code package should be avoided (except the initial setting with vault filter [mode="merge"](ui.apps/src/main/content/META-INF/vault/filter.xml#L5)) otherwise the configuration set by this tool might get overridden.
+* For the schedulers being set by this tool, run mode osgi config that comes with code package should be avoided (except the initial setting with vault filter [mode="merge"](ui.apps/src/main/content/META-INF/vault/filter.xml#L5)) otherwise the configuration set by this tool might get overridden.
 * How to set other properties of the scheduler if needed
   * Use web console if possible
   * Extend this tool to bring other properties to the UI for setting
