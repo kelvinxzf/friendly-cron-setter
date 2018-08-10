@@ -6,7 +6,7 @@ Changing ``scheduler.expression`` of an AEM/Sling scheduler usually is an admin 
 
 ## Features
 
-* jQury based quartz cron generator (by [jquery-cron](https://github.com/felixruponen/jquery-cron))
+* jQuery based quartz cron generator (by [jquery-cron](https://github.com/felixruponen/jquery-cron))
 * Resource based access that can be permissioned for certain users
 * Auto detecting and pulling existing schedulers within current or specified bundle(s)
 
