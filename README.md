@@ -28,14 +28,14 @@ Access http://localhost:4502/etc/friendly-cron/cron-setter.html after successful
 ## A few things to note
 
 * By using this friendly setter, you are delegating this tool to set the configuration, which is equivalent of setting it via web console.
-* Run mode osgi config that comes with code package should be avoided (except the initial setting with vault mode="merge") otherwise whatever being set by this tool might be overridden.
+* Run mode osgi config that comes with code package should be avoided (except the initial setting with vault filter mode="merge") otherwise whatever being set by this tool might be overridden.
 * How to set other properties of the scheduler if needed
   * Use web console if possible
-  * Extend this tool to bring other properties for setting
+  * Extend this tool to bring up other properties to the UI for setting
 
 ## Resource properties
 
 There are a couple of optional [resource properties](ui.apps/src/main/content/jcr_root/etc/friendly-cron/cron-setter/.content.xml)
 
-``bundlePrefix``:  bundle symbolic name prefixes. This tool will only list the schedulers under the bundles that with the name starting with the prefixes. Current bundle will be used if not specified.
-``schedulerPIDPrefix``: scheduler PID prefixes. This tool will only list the schedulers with the PIDs starting with the prefixes. All schedulers will be listed if not specified (subject to ``bundlePrefix`` setting).
+* ``bundlePrefix``:  bundle symbolic name prefixes. This tool will only list the schedulers under the bundles that with the name starting with the prefixes. Current bundle will be used if not specified.
+* ``schedulerPIDPrefix``: scheduler PID prefixes. This tool will only list the schedulers with the PIDs starting with the prefixes. All schedulers will be listed if not specified (subject to ``bundlePrefix`` setting).
