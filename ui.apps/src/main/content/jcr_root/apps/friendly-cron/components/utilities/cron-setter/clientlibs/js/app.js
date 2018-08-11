@@ -28,7 +28,7 @@ angular.module('acs-commons-cron-setter-app', ['acsCoral', 'ACS.Commons.notifica
                             'ERROR', 'Unable to retrieve scheduler list');
                     });
             	
-            	$scope.pid_select.on('change', function() {
+            	$('#pid').change(function() {
             		$scope.getExpression();
             	    });
             	
