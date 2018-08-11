@@ -6,6 +6,6 @@
 
     <filter root="/etc/clientlibs/friendly-cron"/>
     
-    <filter root="/etc/friendly-cron"/>
+    <filter root="/etc/friendly-cron" mode="merge"/>
     
 </workspaceFilter>
