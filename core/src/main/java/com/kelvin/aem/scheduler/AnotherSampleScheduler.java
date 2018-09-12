@@ -15,6 +15,11 @@ import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author kexu
+ *
+ *         Another Sample Scheduler that simply generates debug logs based on the scheduling
+ */
 @Component(
         immediate = true,
         metatype = true,
